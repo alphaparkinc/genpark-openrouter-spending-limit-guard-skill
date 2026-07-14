@@ -1,0 +1,26 @@
+{
+  "name": "genpark-openrouter-spending-limit-guard-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Spending limit and credit quota manager.",
+  "author": "genpark",
+  "category": "agentic",
+  "tags": [
+    "openrouter",
+    "billing"
+  ],
+  "inputs": {
+    "daily_spend_usd": {
+      "type": "number"
+    },
+    "hard_limit_usd": {
+      "type": "number"
+    }
+  },
+  "outputs": {
+    "is_blocked": {
+      "type": "boolean"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
